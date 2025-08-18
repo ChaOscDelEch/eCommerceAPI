@@ -21,8 +21,8 @@
       "default": "./src/middleswares/index.js"
     },
     "#routes": {
-      "development": "./src/routes/index.ts",
-      "default": "./src/routes/index.js"
+      "development": "./src/routers/index.ts",
+      "default": "./src/routers/index.js"
     }
   },
   "scripts": {

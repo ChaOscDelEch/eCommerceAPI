@@ -1,6 +1,6 @@
 import express from 'express';
 import '#db';
-import { userRouter } from '#routers';
+import { userRouter } from '#routes';
 
 const app = express();
 const port = 3000;
