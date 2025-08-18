@@ -4,45 +4,28 @@
   "version": "1.0.0",
   "main": "index.ts",
   "imports": {
-    "#db":{
-      "development": "./src/db/index.js",
-      "default":"./src/db/index.ts"
+    "#db": {
+      "development": "./src/db/index.ts",
+      "default": "./src/db/index.js"
     },
-    "#models/categoryRouter":{
-      "development":"./src/models/categoryRouter.js",
-      "default":"./src/models/categoryRouter.ts"
+    "#models": {
+      "development": "./src/models/index.ts",
+      "default": "./src/models/index.js"
     },
-    "#app":{
-      "development":"./src/app.js",
-      "default":"./src/app.ts"
+    "#controllers": {
+      "development": "./src/controllers/index.ts",
+      "default": "./src/controllers/index.js"
     },
-    "#utils":{
-      "development":"./src/utils/index.js",
-      "default":".src/utils/index.ts"
+    "#middlewares": {
+      "development": "./src/middleswares/index.ts",
+      "default": "./src/middleswares/index.js"
     },
-    "#controllers":{
-      "development":"./src/controllers/index.js",
-      "default":"./src/controllers/index.ts"
-    },
-    "#middlewares":{
-      "development":"./src/middleswares/index.js",
-      "default":"./src/middleswares/index.ts"
-    },
-    "#routes":{
-      "development":"./src/routes/index.js",
-      "default":"./src/routes/index.ts"
-    },
-    "#config": {
-      "development":"./src/config/index.js",
-      "default":".src/config/index.ts"
-    },
-    "#services":{
-      "development":"./src/services/index.js",
-      "default":"./src/services/index.ts"
+    "#routes": {
+      "development": "./src/routes/index.ts",
+      "default": "./src/routes/index.js"
     }
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "node --watch --conditions development --env-file=.env src/app.ts"
   },
   "keywords": [],
