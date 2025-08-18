@@ -1,5 +1,5 @@
 import express from 'express';
-import './db/index.js';
+import './db/index';
 import categoryRouter from './models/categoryRouter';
 
 const app = express();

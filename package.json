@@ -2,10 +2,48 @@
   "type": "module",
   "name": "ecommerce-api",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "index.ts",
+  "imports": {
+    "#db":{
+      "development": "./src/db/index.js",
+      "default":"./src/db/index.ts"
+    },
+    "#models/categoryRouter":{
+      "development":"./src/models/categoryRouter.js",
+      "default":"./src/models/categoryRouter.ts"
+    },
+    "#app":{
+      "development":"./src/app.js",
+      "default":"./src/app.ts"
+    },
+    "#utils":{
+      "development":"./src/utils/index.js",
+      "default":".src/utils/index.ts"
+    },
+    "#controllers":{
+      "development":"./src/controllers/index.js",
+      "default":"./src/controllers/index.ts"
+    },
+    "#middlewares":{
+      "development":"./src/middleswares/index.js",
+      "default":"./src/middleswares/index.ts"
+    },
+    "#routes":{
+      "development":"./src/routes/index.js",
+      "default":"./src/routes/index.ts"
+    },
+    "#config": {
+      "development":"./src/config/index.js",
+      "default":".src/config/index.ts"
+    },
+    "#services":{
+      "development":"./src/services/index.js",
+      "default":"./src/services/index.ts"
+    }
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "node --watch --conditions development --env-file=.env.development.local src/app.ts"
+    "dev": "node --watch --conditions development --env-file=.env src/app.ts"
   },
   "keywords": [],
   "author": "",
