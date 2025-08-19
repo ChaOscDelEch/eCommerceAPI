@@ -1,6 +1,7 @@
 import express from 'express';
 import '#db';
 import { userRouter } from '#routes';
+import { authRouter } from '#routes';
 
 const app = express();
 const port = 3000;
@@ -8,6 +9,7 @@ const port = 3000;
 app.use(express.json());
 
 app.use('/users', userRouter);
+app.use('/auth', authRouter); 
 
 app.get('/', (_req, res) => {
   res.send('Hello World!');
