@@ -2,6 +2,9 @@ import express from 'express';
 import '#db';
 import { userRouter } from '#routes';
 import { authRouter } from '#routes';
+import productRouter from './routers/productRoutes.js';
+import categoryRouter from './routers/categoryRoutes.js';
+
 
 const app = express();
 const port = 3000;
@@ -10,7 +13,8 @@ app.use(express.json());
 
 app.use('/users', userRouter);
 app.use('/auth', authRouter); 
-
+app.use('/products', productRouter);
+app.use('/categories', categoryRouter);
 app.get('/', (_req, res) => {
   res.send('Hello World!');
 });
