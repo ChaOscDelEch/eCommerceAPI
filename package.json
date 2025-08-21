@@ -17,8 +17,8 @@
       "default": "./src/controllers/index.js"
     },
     "#middlewares": {
-      "development": "./src/middleswares/index.ts",
-      "default": "./src/middleswares/index.js"
+      "development": "./src/middlewares/index.ts",
+      "default": "./src/middlewares/index.js"
     },
     "#routes": {
       "development": "./src/routers/index.ts",
