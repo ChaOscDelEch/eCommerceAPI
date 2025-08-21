@@ -1,6 +1,6 @@
 import type { RequestHandler } from "express";
 // Make sure the path and export are correct; adjust as needed:
-import { Category } from "../models/category";
+import { Category } from "#models";
 
 export const createCategory: RequestHandler = async (req, res) => {
   const { name } = req.body;

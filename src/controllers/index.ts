@@ -1,3 +1,3 @@
-export * from "./authController.ts"
-
-export * from './categoryController.js';
+export * from "./authController.ts";
+export * from './categoryController.ts';
+export * from './productController.ts';

@@ -9,3 +9,5 @@ try {
   console.error('error connecting db', error);
   process.exit(1);
 }
+
+export default mongoose;

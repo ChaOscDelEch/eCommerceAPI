@@ -1,6 +1,5 @@
 import type { RequestHandler } from "express";
-import { Product } from "../models/product.ts";
-import { Category } from "../models/category.ts";
+import { Category, Product } from '#models';
 
 export const createProduct: RequestHandler = async (req, res) => {
   const { name, description, price, categoryId } = req.body;

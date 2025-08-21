@@ -2,8 +2,8 @@ import express from 'express';
 import '#db';
 import { userRouter } from '#routes';
 import { authRouter } from '#routes';
-import productRouter from './routers/productRoutes.js';
-import categoryRouter from './routers/categoryRoutes.js';
+import productRouter from './routers/productRoutes.ts';
+import categoryRouter from './routers/categoryRoutes.ts';
 
 
 const app = express();
@@ -22,3 +22,4 @@ app.get('/', (_req, res) => {
 app.listen(port, () => {
   console.log(`Server running on http://localhost:${port}`);
 });
+
