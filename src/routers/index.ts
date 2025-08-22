@@ -6,3 +6,4 @@ export { default as productRouter } from './productRoutes.ts';
 
 export { default as categoryRouter } from './categoryRoutes.ts';
 
+export { default as postRouter } from './postRoutes.ts';

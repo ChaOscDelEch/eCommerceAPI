@@ -32,4 +32,4 @@ FR021	Categories CRUD	GET /categories, POST /categories, GET /categories/:id, PU
 FR022	Orders CRUD	GET /orders, POST /orders, GET /orders/:id, PUT /orders/:id, DELETE /orders/:id.
 Documentation & Tooling
 ID	Functional Requirement	Description
-FR023	Swagger UI	Once the entire app is implemented, add documentation with Swagger UI
+FR023	Swagger UI	Once the entire app is implemented, add documentation with Swagger UI   
